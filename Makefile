@@ -22,6 +22,7 @@ SRC_PATH	=	src
 OBJ_PATH	=	obj
 SUBDIR		=	gnl libft printf
 
+
 SRC_DIR	= $(foreach dir, $(SUBDIR), $(addprefix $(SRC_PATH)/, $(dir)))
 OBJ_DIR	= $(foreach dir, $(SUBDIR), $(addprefix $(OBJ_PATH)/, $(dir)))
 SRC		= $(foreach dir, $(SRC_DIR), $(wildcard $(dir)/*.c))
